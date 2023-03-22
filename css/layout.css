@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul,ol,li{
+    list-style: none;
+}
+body{
+    font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    background-image: url(../img/back_img.jpg);
+    height: 100%;
+    width:100%;
+    top:0;
+    left:0;
+    background-size: cover;
+    background-repeat:repeat-y;
+    background-attachment: fixed;
+}
+.inner{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+/******************************** 기본세팅 *******************************/
+
+/********** section01 **********/
+section{
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    overflow: hidden;
+}
+section~section{
+    top:100%;
+}
+#sec01{
+    color: #fff;
+    padding-top: 80px;
+}
+#sec01 .inner{
+    height: 811px;
+    width: 1197px;
+    background-image: url(../img/main_page.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#sec01 .center_con{
+   width: 100%;
+   height: 500px;
+   margin-top: 100px;
+} 
+#sec01 .email{
+    position: relative;
+    top: 120px;
+    right: -1000px;
+}
+/********** 메일 회전 이벤트 효과 **********/
+#sec01 .email img {
+    animation: rotate_image 10s linear infinite;
+    transform-origin: 50% 50%;
+}
+@keyframes rotate_image{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/*****************************************/
+#sec01 .bubble img{
+    display: block;
+    margin: 0 auto;
+}
+#sec01 #main_wrap{
+    position: relative;
+    top: -200px;
+}
+#sec01 #about{
+    display: flex;
+    justify-content: space-between;
+}
+#main_text{
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 20px;
+}
+#main_page{
+    width: 1000px;
+    margin: 0 auto;
+}
+#main_page h2{
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+#main_page span{
+    display: inline-block;
+    width: 600px;
+    height: 0;
+    border-bottom: 0.5px solid #fff;
+    padding-top: 20px;
+}
+#main_page p{
+    font-weight: 100;
+}
+#about{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+#about h3{
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+#about p{
+    font-size: 0.8rem;
+    width: 333px;
+}
+#about #certificate{
+    margin-left: 30px;
+}
+/********** section01 끝 **********/
+
+/********** section02 **********/
+#sec02{
+    margin-top: 80px;
+}
+#sec02 .inner{
+    height: 811px;
+    width: 1198px;
+    background-image: url(../img/photo_booth.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#sec02 #web_text{
+    display: block;
+    text-align: center;
+    position: relative;
+    top: 90px;
+}
+.wrap_slide{
+    width: 1197px;
+    height: 500px;
+    top: -790px;
+    margin-top: 25px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper .text_wrap{
+    width: 300px;
+    float: left;
+    margin-left: 80px;
+    padding-top: 130px;
+    color: #fff;
+}
+.swiper .text_wrap h2{
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+}
+.swiper .text_wrap p{
+    padding-bottom: 20px;
+}
+.swiper .text_wrap a{
+    text-align: center;
+    padding-top: 2px;
+    display: block;
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #fff;
+    color: #555;
+}
+.swiper .text_wrap:hover a{
+    color: #000;
+}
+.swiper .img_wrap{
+    width: 500px;
+    float: right;
+    margin-right: 80px;
+}
+.swiper-slide {
+  clear: both;
+}
+.swiper-slide img {
+    display: block;
+    margin: 0 auto;
+}
+.img_wrap img{
+    display: block;
+    padding-bottom: 50px;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+#Screen{
+    height: 100px;
+    width: 292px;
+}
+.mySwiper2 {
+  height: 80%;
+  width: 1000px;
+  /* display: flex;
+  justify-content: space-between;
+  display: inline-block; */
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+  margin-top: 58px;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+/********** section02 끝 **********/
+
+
+/********** section03 **********/
+
+#sec03{
+    margin-top: 80px;
+}
+#sec03 .inner{
+    height: 811px;
+    width: 1198px;
+    background-image: url(../img/design.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.panel1_swiper{
+    width: 940px;
+    height: 740px;
+    align-items: center;
+    overflow: hidden;
+}
+
+/*********** #panel1 ***********/
+  #panel1 .swiper-slide {
+    padding-top: 70px;
+  }
+
+  #panel1 .swiper-slide img {
+    display: block;
+    width: 392px;
+    height: 590px;
+    object-fit: cover;
+  }
+  #panel1 .swiper-slide .mar{
+    margin-right: 20px;
+  }
+  #panel1 #design_sli{
+    display: flex;
+    justify-content: center;
+  }
+/*********** #panel1 끝 ***********/
+
+
+.tabs{
+    width: 258px;
+    height: 804px;
+    padding-top: 60px;
+}
+.tab_set {
+    padding-top: 60px;
+    display: flex;
+}
+
+.tab_set ul li {
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+}
+.tab_set ul li img{
+    display: block;
+}
+.tab_set ul li a {
+    padding: 5px 30px;
+    display: block;
+}
+
+.tab_set ul li a.on {
+    background-color: #d7edff;
+}
+
+.tab_set ul li a:hover {
+    /* background-color: darkseagreen; */
+}
+
+.panels{
+    width: 938px;
+    height: 745px;
+}
+.panels > div {
+    width: 100%;
+    height: 740px;
+    /* background-color: lightgray; */
+}
+#panel1, #panel2, #panel3, #panel4{
+    display: none;
+}
+
+
+
+/********** #panel2 **********/
+
+#panel2 .swiper-slide {
+    padding-top: 100px;
+  }
+.design_main_bg{
+    margin-top: 80px;
+}
+.panel2_swiper{
+    width: 940px;
+    height: 740px;
+    align-items: center;
+    overflow: hidden;
+}
+#panel2 .swiper-slide img {
+    display: block;
+    object-fit: cover;
+  }
+/********** #panel2 끝**********/
+
+/********** #panel3 **********/
+#panel3 .swiper-slide {
+    padding-top: 70px;
+  }
+.panel3_swiper{
+    width: 940px;
+    height: 740px;
+    align-items: center;
+    overflow: hidden;
+}
+#panel3 .swiper-slide img {
+    display: block;
+    width: 392px;
+    height: 590px;
+    object-fit: cover;
+  }
+  #panel3 .swiper-slide .mar{
+    margin-right: 20px;
+  }
+  #panel3 #design_sli{
+    display: flex;
+    justify-content: center;
+  }
+/********** #panel3끝 **********/
+
+/********** section03 끝 **********/
+
+/********** section04 **********/
+.thx_page{
+    margin-top: 120px;
+    background-image: url(../img/page.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.thx img{
+    width: 1000px;
+    height: 750px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+}
